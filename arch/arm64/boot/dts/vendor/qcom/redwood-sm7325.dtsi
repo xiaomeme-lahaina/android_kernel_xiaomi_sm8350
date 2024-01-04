@@ -634,7 +634,7 @@ And public attribution of xiaomi platforms
 		goodix,avdd-gpio = <&tlmm 107 0x00>;
 		vdd-supply = <&L2C>;
 		focaltech,max-touch-number = <10>;
-		focaltech,super-resolution-factors = <0x0a>;
+		focaltech,super-resolution-factors = <10>;
 		focaltech,display-coords = <0 0 10800 24000>;
 		focaltech,irq-gpio = <&tlmm 81 0x2808>;
 		focaltech,reset-gpio = <&tlmm 105 0x00>;
