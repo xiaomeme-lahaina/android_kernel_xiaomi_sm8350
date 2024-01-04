@@ -279,6 +279,7 @@
 			qcom,supply-post-on-sleep = <10>;
 		};
 	};
+
 	dsi_panel_pwr_supply_m20: dsi_panel_pwr_supply_m20 {
 		#address-cells = <1>;
 		#size-cells = <0>;
@@ -311,6 +312,44 @@
 			qcom,supply-max-voltage = <3000000>;
 			qcom,supply-enable-load = <10000>;
 			qcom,supply-disable-load = <0>;
+			qcom,supply-post-on-sleep = <10>;
+			qcom,supply-pre-off-sleep = <1>;
+		};
+	};
+};
+
+	dsi_panel_pwr_supply_m20_0b: dsi_panel_pwr_supply_m20_0b {
+		#address-cells = <1>;
+		#size-cells = <0>;
+
+		qcom,panel-supply-entry@0 {
+			reg = <0>;
+			qcom,supply-name = "vddio";
+			qcom,supply-min-voltage = <1800000>;
+			qcom,supply-max-voltage = <1800000>;
+			qcom,supply-enable-load = <60700>;
+			qcom,supply-disable-load = <80>;
+			qcom,supply-post-on-sleep = <10>;
+			qcom,supply-pre-off-sleep = <2>;
+		};
+		qcom,panel-supply-entry@1 {
+			reg = <1>;
+			qcom,supply-name = "vdd";
+			qcom,supply-min-voltage = <3000000>;
+			qcom,supply-max-voltage = <3000000>;
+			qcom,supply-enable-load = <10000>;
+			qcom,supply-disable-load = <0>;
+			qcom,supply-post-on-sleep = <10>;
+			qcom,supply-pre-off-sleep = <1>;
+		};
+
+		qcom,panel-supply-entry@2 {
+			reg = <2>;
+			qcom,supply-name = "dvdd";
+			qcom,supply-min-voltage = <1250000>;
+			qcom,supply-max-voltage = <1250000>;
+			qcom,supply-enable-load = <60700>;
+			qcom,supply-disable-load = <80>;
 			qcom,supply-post-on-sleep = <10>;
 			qcom,supply-pre-off-sleep = <1>;
 		};
