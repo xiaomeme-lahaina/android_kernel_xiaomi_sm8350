@@ -316,7 +316,6 @@
 			qcom,supply-pre-off-sleep = <1>;
 		};
 	};
-};
 
 	dsi_panel_pwr_supply_m20_0b: dsi_panel_pwr_supply_m20_0b {
 		#address-cells = <1>;
