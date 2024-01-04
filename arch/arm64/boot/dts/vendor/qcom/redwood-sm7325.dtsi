@@ -633,7 +633,7 @@ And public attribution of xiaomi platforms
 		goodix,iovdd-name = "vdd";
 		goodix,avdd-gpio = <&tlmm 107 0x00>;
 		vdd-supply = <&L2C>;
-		focaltech,max-touch-number = <0x0a>;
+		focaltech,max-touch-number = <10>;
 		focaltech,super-resolution-factors = <0x0a>;
 		focaltech,display-coords = <0 0 10800 24000>;
 		focaltech,irq-gpio = <&tlmm 81 0x2808>;
@@ -643,7 +643,7 @@ And public attribution of xiaomi platforms
 		focaltech,touch-range-array = <0x01 0x05 0x0a 0x0f 0x14>;
 		focaltech,touch-def-array = <0x04 0x03 0x03 0x03>;
 		focaltech,touch-expert-array = <0x0a 0x0f 0x0a 0x0a 0x14 0x0f 0x0f 0x0a 0x0f 0x0f 0x14 0x0a>;
-        iovdd-supply = <&L2C>;
+		iovdd-supply = <&L2C>;
 	};
 };
 &tlmm {
